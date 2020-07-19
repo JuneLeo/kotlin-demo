@@ -31,6 +31,30 @@ fun main() {
 //    println(str?.length)
 
 
+    var listOf = listOf<String>("apple", "banana", "iphone", "android", "animal")
+//    listOf = listOf.filter {
+//        it.contains("an")
+//    }
+//    for (s in listOf) {
+//        println(s)
+//    }
+    val a: Any = 1.1;
+
+    val s = when (a) {
+        is String -> "string"
+        is Int -> "int"
+        else -> "null"
+    }
+
+    println(s)
+
+
+    val mapOf = mutableMapOf("a" to "1", "b" to "2", "c" to "3")
+
+    for (mutableEntry in mapOf) {
+        println("key is ${mutableEntry.key},value is ${mutableEntry.value}")
+    }
+
 }
 
 
